@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://norma-bit.github.io/ramsmedia-site/sitemap.xml
