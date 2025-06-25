@@ -26,6 +26,30 @@
       scroll-behavior: smooth;
       background-color: #fdfdfd;
     }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+<script>
+  async function loadTools() {
+    const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/YOUR_SHEET_ID/pub?output=csv';
+    const res = await fetch(sheetUrl);
+    const csv = await res.text();
+    const { data } = Papa.parse(csv, { header: true });
+    const container = document.getElementById("tool-buttons");
+
+    data.forEach(row => {
+      if (row.Name && row.Icon && row.URL) {
+        const div = document.createElement("div");
+        div.className = "col-6 col-md-4";
+        div.innerHTML = `
+          <a href="${row.URL}" target="_blank" class="btn btn-outline-dark w-100 tool-button">
+            <span>${row.Icon}</span><br/>${row.Name}
+          </a>`;
+        container.appendChild(div);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadTools);
+</script>
 
     .navbar-brand img {
       height: 50px;
