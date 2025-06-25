@@ -37,4 +37,10 @@
     <priority>0.80</priority>
   </url>
 
+  <url>
+    <loc>https://norma-bit.github.io/ramsmedia-site/gallery.html</loc>
+    <lastmod>2025-06-25</lastmod>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>
