@@ -297,35 +297,37 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
 
-   <script>
-      // Load tools from Google Sheet
+ <script>
       async function loadTools() {
-         try {
-            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NwM8lbE_vE1X8fB7MVdlEd_8ger1gd3LiVg0h-xkkGSgGvl-IuDGaxNCRkVT_QZ1Yretw34M8iNS/pub?output=csv';
-            const response = await fetch(sheetUrl);
-            const csv = await response.text();
-            const { data } = Papa.parse(csv, { header: true });
-            const container = document.getElementById("tool-buttons");
+         const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NwM8lbE_vE1X8fB7MVdlEd_8ger1gd3LiVg0h-xkkGSgGvl-IuDGaxNCRkVT_QZ1Yretw34M8iNS/pub?output=csv";
+         const res = await fetch(sheetUrl);
+         const csv = await res.text();
+         const { data } = Papa.parse(csv, { header: true });
+         const container = document.createElement("div");
+         container.className = "container py-5";
+         container.id = "tool-buttons";
 
-            data.forEach(row => {
-               if (row.Name && row.URL && (row.Icon || row.Image)) {
-                  const iconHTML = row.Image
-                     ? `<img src="${row.Image}" alt="${row.Name}" style="height: 40px; margin-bottom: 0.5rem;">`
-                     : `<span>${row.Icon}</span>`;
+         const row = document.createElement("div");
+         row.className = "row g-4 justify-content-center";
 
-                  const div = document.createElement("div");
-                  div.className = "col-6 col-md-4";
-                  div.innerHTML = `
-                     <a href="${row.URL}" target="_blank" class="btn btn-outline-dark w-100 tool-button text-center">
-                        ${iconHTML}<br/>${row.Name}
-                     </a>`;
-                  container.appendChild(div);
-               }
-            });
-         } catch (error) {
-            console.log('Error loading tools:', error);
-         }
+         data.forEach(rowData => {
+            if (rowData.Name && rowData.Icon && rowData.URL) {
+               const col = document.createElement("div");
+               col.className = "col-6 col-md-4";
+               col.innerHTML = `
+                  <a href="${rowData.URL}" target="_blank" class="btn btn-outline-dark w-100 tool-button">
+                     <span>${rowData.Icon}</span><br/>${rowData.Name}
+                  </a>`;
+               row.appendChild(col);
+            }
+         });
+
+         container.appendChild(row);
+         document.body.insertBefore(container, document.querySelector("footer"));
       }
+
+      document.addEventListener("DOMContentLoaded", loadTools);
+   </script>
 
       // Initialize gallery lightbox
       function initializeGallery() {
