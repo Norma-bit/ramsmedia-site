@@ -344,10 +344,8 @@
          const container = document.createElement("div");
          container.className = "container py-5";
          container.id = "tool-buttons";
-
          const row = document.createElement("div");
          row.className = "row g-4 justify-content-center";
-
          data.forEach(rowData => {
             if (rowData.Name && rowData.Icon && rowData.URL) {
                const col = document.createElement("div");
@@ -363,10 +361,8 @@
          container.appendChild(row);
          document.body.insertBefore(container, document.querySelector("footer"));
       }
-
       document.addEventListener("DOMContentLoaded", loadTools);
    </script>
-
       // Initialize gallery lightbox
       function initializeGallery() {
          const galleryImages = document.querySelectorAll("#gallery .tab-pane img");
@@ -384,7 +380,6 @@
             captionsData: 'alt',
          });
       }
-
       // Initialize everything when DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
          loadTools();
