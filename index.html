@@ -326,7 +326,6 @@
          </div>
       </div>
    </section>
-
    <footer class="bg-dark text-white text-center py-4">
       <p class="mb-0">&copy; 2025 RAMSmedia – Harding University High School</p>
    </footer>
@@ -335,7 +334,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
 
- <script>
+   <script>
       async function loadTools() {
          const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NwM8lbE_vE1X8fB7MVdlEd_8ger1gd3LiVg0h-xkkGSgGvl-IuDGaxNCRkVT_QZ1Yretw34M8iNS/pub?output=csv";
          const res = await fetch(sheetUrl);
@@ -361,9 +360,7 @@
          container.appendChild(row);
          document.body.insertBefore(container, document.querySelector("footer"));
       }
-      document.addEventListener("DOMContentLoaded", loadTools);
-   </script>
-      // Initialize gallery lightbox
+
       function initializeGallery() {
          const galleryImages = document.querySelectorAll("#gallery .tab-pane img");
          galleryImages.forEach(img => {
@@ -380,8 +377,8 @@
             captionsData: 'alt',
          });
       }
-      // Initialize everything when DOM is loaded
-      document.addEventListener('DOMContentLoaded', function() {
+
+      document.addEventListener('DOMContentLoaded', function () {
          loadTools();
          initializeGallery();
       });
