@@ -249,7 +249,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script> 
       <script>
          async function loadTools() {
-           const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/1jNGuRVyrq1PFRpfePpYcdZwGXmLlKtu-Az702QDMEk0/pub?output=csv';
+           const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/jNGuRVyrq1PFRpfePpYcdZwGXmLlKtu-Az702QDMEk0/pub?output=csv';
            const res = await fetch(sheetUrl);
            const csv = await res.text();
            const { data } = Papa.parse(csv, { header: true });
