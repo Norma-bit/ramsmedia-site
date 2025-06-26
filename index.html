@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>RAMSmedia – Harding HS Student Media Arts</title>
@@ -13,309 +13,403 @@
    <meta property="og:url" content="https://norma-bit.github.io/ramsmedia-site/">
    <meta property="og:type" content="website">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css" rel="stylesheet">
    <style>
       body {
-         background: linear-gradient(to bottom, #111827, #1f2937);
          font-family: 'Open Sans', sans-serif;
          scroll-behavior: smooth;
          background-color: #fdfdfd;
-         .navbar-brand img {
+      }
+      
+      .navbar-brand img {
          height: 50px;
-         }
-         section {
+      }
+      
+      section {
          padding: 80px 0;
-         }
-         header {
+      }
+      
+      header {
          background: linear-gradient(135deg, #990000, #cc0000);
          color: white;
          text-align: center;
          padding: 80px 0 60px;
          margin-top: 56px;
-         }
-         header h1 {
-         font-size: 2.25rem;
-         font-weight: 600;
+      }
+      
+      header h1 {
+         font-family: 'Fredoka One', cursive;
+         font-size: 3rem;
+         font-weight: 400;
          margin-bottom: 0.5rem;
-         }
-         header p {
-         font-size: 1.125rem;
+      }
+      
+      header h2, header h3 {
+         font-size: 1.5rem;
          margin-top: 0.5rem;
-         }
-         .btn-primary {
+         font-weight: 400;
+      }
+      
+      .btn-primary {
          background-color: #990000;
          border: none;
          border-radius: 8px;
          padding: 10px 24px;
-         }
-         .btn-primary:hover {
+         transition: all 0.3s ease;
+      }
+      
+      .btn-primary:hover {
          background-color: #b30000;
-         }
-         .nav-link {
+         transform: translateY(-2px);
+      }
+      
+      .nav-link {
          color: #ffffff !important;
          font-weight: 500;
          transition: color 0.3s ease;
-         }
-         .nav-link:hover {
+      }
+      
+      .nav-link:hover {
          color: #ffcc00 !important;
-         }
-         footer {
+      }
+      
+      footer {
          background-color: #000;
          color: #fff;
          padding: 40px 0;
          text-align: center;
-         }
-         .tool-button span {
+      }
+      
+      .tool-button {
+         transition: all 0.3s ease;
+         padding: 1.5rem 1rem;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+      
+      .tool-button:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      }
+      
+      .tool-button span, .tool-button div {
          font-size: 2rem;
          display: block;
-         margin-bottom: 0.4rem;
-         }
-      </style>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#page-top"><img alt="RAMSmedia" class="me-2" src="ramsmedialogo.jpg"> <span class="text-white">RAMSmedia</span></a> <button class="navbar-toggler" data-bs-target="#navbarResponsive" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="portfolio.html">Student Portfolios</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#booking">Book</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#gallery">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#youtube">YouTube</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <header>
-         <div class="container">
-            <h1 class="Dancing+Script&family">RAMSmedia</h1>
-            <div>
-            <h2 class="lead">Harding University High School</h2>
-            <div>
-            <h3 class="lead">Media Arts Program</h3>
-         </div>
-      </header>
-      <section class="text-center" id="services" style="background-color: #fff8e1;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">Services Offered</h2>
-            <div class="row">
-               <div class="col-md-3 mb-4">
-                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
-                     <h4 style="color: #990000;">Photography</h4>
-                     <p>Professional-quality photos for events, projects, or portraits.</p>
-                  </div>
-               </div>
-               <div class="col-md-3 mb-4">
-                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
-                     <h4 style="color: #990000;">Event Flyers</h4>
-                     <p>Custom-designed flyers to promote school and community events.</p>
-                  </div>
-               </div>
-               <div class="col-md-3 mb-4">
-                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
-                     <h4 style="color: #990000;">Senior Photos</h4>
-                     <p>Stylized senior portraits with multiple backdrop and location options.</p>
-                  </div>
-               </div>
-               <div class="col-md-3 mb-4">
-                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
-                     <h4 style="color: #990000;">Social Media</h4>
-                     <p>Custom visuals and content creation for Instagram, TikTok, and more.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="text-center" id="youtube" style="background-color: #fff8e1;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">RAMSmedia on YouTube</h2>
-            <p class="mb-4">Check out our latest video from the Media Arts program.</p>
-            <div class="ratio ratio-16x9 mx-auto" style="max-width: 900px;">
-               <iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/c9AruiY73-I" title="RAMSmedia YouTube Preview"></iframe>
-            </div>
-         </div>
-      </section>
-      <section class="text-center" id="portfolios" style="background-color: #f8f9fa; padding: 4rem 2rem;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">Student Portfolios</h2>
-            <p class="mb-5">Click a card below to view each student's portfolio:</p>
-            <div class="row justify-content-center">
-               <div class="col-md-4 mb-4">
-                  <div class="card h-100 shadow-sm">
-                     <div class="card-body">
-                        <h5 class="card-title">Alexander Colon Rodriguez</h5>
-                        <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/RJN7gcasvwuDh?authuser=0" target="_blank">View Portfolio</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 mb-4">
-                  <div class="card h-100 shadow-sm">
-                     <div class="card-body">
-                        <h5 class="card-title">Yasmine Porterfield</h5>
-                        <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/aUE4w0bDeoW6s?authuser=0" target="_blank">View Portfolio</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 mb-4">
-                  <div class="card h-100 shadow-sm">
-                     <div class="card-body">
-                        <h5 class="card-title">Eithon Leiva</h5>
-                        <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/DC1QNkRSLblrG?authuser=0" target="_blank">View Portfolio</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="text-center" id="gallery" style="background-color: #f8f9fa;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">Student Gallery</h2>
-            <p class="mb-4">Explore visual work across different categories.</p>
-            <ul class="nav nav-pills justify-content-center mb-4" id="galleryTabs" role="tablist">
-               <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-target="#photography" data-bs-toggle="pill" id="photo-tab" role="tab" type="button">Photography</button></li>
-               <li class="nav-item" role="presentation"><button class="nav-link" data-bs-target="#photoshop" data-bs-toggle="pill" id="photoshop-tab" role="tab" type="button">Photoshop</button></li>
-               <li class="nav-item" role="presentation"><button class="nav-link" data-bs-target="#illustrator" data-bs-toggle="pill" id="illustrator-tab" role="tab" type="button">Illustrator</button></li>
+         margin-bottom: 0.5rem;
+      }
+      
+      .card {
+         transition: transform 0.3s ease;
+      }
+      
+      .card:hover {
+         transform: translateY(-5px);
+      }
+      
+      .service-card {
+         transition: all 0.3s ease;
+         border: 2px solid transparent;
+      }
+      
+      .service-card:hover {
+         border-color: #990000;
+         transform: translateY(-5px);
+      }
+      
+      .gallery-img {
+         cursor: pointer;
+         transition: transform 0.3s ease;
+      }
+      
+      .gallery-img:hover {
+         transform: scale(1.05);
+      }
+   </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+         <a class="navbar-brand d-flex align-items-center" href="#page-top">
+            <img alt="RAMSmedia" class="me-2" src="ramsmedialogo.jpg">
+            <span class="text-white">RAMSmedia</span>
+         </a>
+         <button class="navbar-toggler" data-bs-target="#navbarResponsive" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="portfolio.html">Student Portfolios</a></li>
+               <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
+               <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+               <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+               <li class="nav-item"><a class="nav-link" href="#youtube">YouTube</a></li>
+               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-            <div class="tab-content">
-               <div class="tab-pane fade show active" id="photography" role="tabpanel">
-                  <div class="row g-4">
-                     <div class="col-sm-6 col-md-4"><img alt="Photography 1" class="img-fluid rounded shadow-sm" src="images/photo1.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Photography 2" class="img-fluid rounded shadow-sm" src="images/photo2.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Photography 3" class="img-fluid rounded shadow-sm" src="images/photo3.jpg"></div>
-                  </div>
-               </div>
-               <div class="tab-pane fade" id="photoshop" role="tabpanel">
-                  <div class="row g-4">
-                     <div class="col-sm-6 col-md-4"><img alt="Photoshop 1" class="img-fluid rounded shadow-sm" src="images/ps1.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Photoshop 2" class="img-fluid rounded shadow-sm" src="images/ps2.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Photoshop 3" class="img-fluid rounded shadow-sm" src="images/ps3.jpg"></div>
-                  </div>
-               </div>
-               <div class="tab-pane fade" id="illustrator" role="tabpanel">
-                  <div class="row g-4">
-                     <div class="col-sm-6 col-md-4"><img alt="Illustrator 1" class="img-fluid rounded shadow-sm" src="images/ai1.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Illustrator 2" class="img-fluid rounded shadow-sm" src="images/ai2.jpg"></div>
-                     <div class="col-sm-6 col-md-4"><img alt="Illustrator 3" class="img-fluid rounded shadow-sm" src="images/ai3.jpg"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="text-center" id="booking" style="background-color: #f8f9fa;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">Book a Media Session</h2>
-            <div class="mx-auto" style="max-width: 900px;">
-               <iframe frameborder="0" height="650" src="https://outlook.office.com/bookwithme/user/d3d54e286c1b49028789c095c3fc5c1a@cms.k12.nc.us?anonymous&ep=plink" style="border: 3px solid #990000; border-radius: 12px;" width="100%"></iframe>
-            </div>
-         </div>
-      </section>
-      <section class="text-center" id="contact" style="background-color: #fff8e1;">
-         <div class="container">
-            <h2 class="text-uppercase mb-4" style="color: #990000;">Contact Us</h2>
-            <p class="mb-4">Have a question or want to work with RAMSmedia? Fill out the form below and we’ll get back to you.</p>
-            <div class="mx-auto" style="max-width: 900px;">
-               <iframe allowfullscreen frameborder="0" height="480px" src="https://forms.office.com/r/P7T8Ar7ZWn?embed=true" style="border: 3px solid #990000; border-radius: 12px; max-width:100%; max-height:100vh" width="640px"></iframe>
-            </div>
-         </div>
-      </section>
-      <section class="text-center py-5" style="background-color: #fff8e1;">
-         <div class="container">
-            <div class="row justify-content-center g-4" id="tool-buttons">
-               <!-- Dashboard tools loaded from Google Sheet via PapaParse -->
-            </div>
-         </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script> 
-      <script>
-         async function loadTools() {
-           const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NwM8lbE_vE1X8fB7MVdlEd_8ger1gd3LiVg0h-xkkGSgGvl-IuDGaxNCRkVT_QZ1Yretw34M8iNS/pubhtml';
-           const res = await fetch(sheetUrl);
-           const csv = await res.text();
-           const { data } = Papa.parse(csv, { header: true });
-           const container = document.getElementById("tool-buttons");
-         
-           data.forEach(row => {
-             if (row.Name && row.URL && (row.Icon || row.Image)) {
-               const iconHTML = row.Image
-                 ? `<img src="${row.Image}" alt="${row.Name}" style="height: 40px; margin-bottom: 0.5rem;">`
-                 : `<span>${row.Icon}<\/span>`;
-         
-               const div = document.createElement("div");
-               div.className = "col-6 col-md-4";
-               div.innerHTML = `
-                 <a href="${row.URL}" target="_blank" class="btn btn-outline-dark w-100 tool-button text-center">
-                   ${iconHTML}<br/>${row.Name}
-                 <\/a>`;
-               container.appendChild(div);
-             }
-           });
-         document.addEventListener('DOMContentLoaded', loadTools);
-      </script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css" rel="stylesheet">
-      <script>
-         document.addEventListener("DOMContentLoaded", function () {
-           var galleryLinks = document.querySelectorAll("#gallery .tab-pane img");
-           galleryLinks.forEach(img => {
-             const link = document.createElement("a");
-             link.href = img.src;
-             link.classList.add("gallery-lightbox");
-             img.parentNode.insertBefore(link, img);
-             link.appendChild(img);
-           });
-           new SimpleLightbox('.gallery-lightbox', {});
-         });
-      </script>
-         <footer class="bg-dark text-white text-center py-4">
-   <p class="mb-0">&copy; 2025 RAMSmedia – Harding University High School</p>
-</footer>
-
-<section class="text-center py-5" style="background-color: #fff8e1;">
-   <div class="container">
-      <div class="row justify-content-center g-4">
-         <div class="col-12 col-md-4">
-            <a href="https://launchpad.classlink.com/cmsk12" target="_blank" class="btn btn-danger w-100 py-4 fs-4">
-               <div style="font-size: 2rem;">🚀</div>
-               LaunchPad
-            </a>
-         </div>
-         <div class="col-12 col-md-4">
-            <a href="https://www.cmsk12.org/hardinguniversityHS" target="_blank" class="btn btn-outline-dark w-100 py-4 fs-4">
-               <div style="font-size: 2rem;">🏫</div>
-               Harding HS
-            </a>
-         </div>
-         <div class="col-12 col-md-4">
-            <a href="dashboard.html" class="btn btn-outline-dark w-100 py-4 fs-4">
-               <div style="font-size: 2rem;">🧭</div>
-               Student Dashboard
-            </a>
          </div>
       </div>
-   </div>
-</section>
+   </nav>
+
+   <header id="page-top">
+      <div class="container">
+         <h1>RAMSmedia</h1>
+         <h2 class="lead">Harding University High School</h2>
+         <h3 class="lead">Media Arts Program</h3>
+      </div>
+   </header>
+
+   <section class="text-center" id="services" style="background-color: #fff8e1;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">Services Offered</h2>
+         <div class="row">
+            <div class="col-md-3 mb-4">
+               <div class="service-card p-4 border rounded shadow-sm h-100 bg-white">
+                  <h4 style="color: #990000;">Photography</h4>
+                  <p>Professional-quality photos for events, projects, or portraits.</p>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4">
+               <div class="service-card p-4 border rounded shadow-sm h-100 bg-white">
+                  <h4 style="color: #990000;">Event Flyers</h4>
+                  <p>Custom-designed flyers to promote school and community events.</p>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4">
+               <div class="service-card p-4 border rounded shadow-sm h-100 bg-white">
+                  <h4 style="color: #990000;">Senior Photos</h4>
+                  <p>Stylized senior portraits with multiple backdrop and location options.</p>
+               </div>
+            </div>
+            <div class="col-md-3 mb-4">
+               <div class="service-card p-4 border rounded shadow-sm h-100 bg-white">
+                  <h4 style="color: #990000;">Social Media</h4>
+                  <p>Custom visuals and content creation for Instagram, TikTok, and more.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center" id="youtube" style="background-color: #f8f9fa;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">RAMSmedia on YouTube</h2>
+         <p class="mb-4">Check out our latest video from the Media Arts program.</p>
+         <div class="ratio ratio-16x9 mx-auto" style="max-width: 900px;">
+            <iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/c9AruiY73-I" title="RAMSmedia YouTube Preview"></iframe>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center" id="portfolios" style="background-color: #fff8e1; padding: 4rem 2rem;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">Student Portfolios</h2>
+         <p class="mb-5">Click a card below to view each student's portfolio:</p>
+         <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                     <h5 class="card-title">Alexander Colon Rodriguez</h5>
+                     <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/RJN7gcasvwuDh?authuser=0" target="_blank">View Portfolio</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                     <h5 class="card-title">Yasmine Porterfield</h5>
+                     <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/aUE4w0bDeoW6s?authuser=0" target="_blank">View Portfolio</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="card h-100 shadow-sm">
+                  <div class="card-body">
+                     <h5 class="card-title">Eithon Leiva</h5>
+                     <a class="btn btn-primary mt-2" href="https://new.express.adobe.com/webpage/DC1QNkRSLblrG?authuser=0" target="_blank">View Portfolio</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center" id="gallery" style="background-color: #f8f9fa;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">Student Gallery</h2>
+         <p class="mb-4">Explore visual work across different categories.</p>
+         <ul class="nav nav-pills justify-content-center mb-4" id="galleryTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+               <button class="nav-link active" data-bs-target="#photography" data-bs-toggle="pill" id="photo-tab" role="tab" type="button">Photography</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link" data-bs-target="#photoshop" data-bs-toggle="pill" id="photoshop-tab" role="tab" type="button">Photoshop</button>
+            </li>
+            <li class="nav-item" role="presentation">
+               <button class="nav-link" data-bs-target="#illustrator" data-bs-toggle="pill" id="illustrator-tab" role="tab" type="button">Illustrator</button>
+            </li>
+         </ul>
+         <div class="tab-content">
+            <div class="tab-pane fade show active" id="photography" role="tabpanel">
+               <div class="row g-4">
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photography 1" class="img-fluid rounded shadow-sm gallery-img" src="images/photo1.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photography 2" class="img-fluid rounded shadow-sm gallery-img" src="images/photo2.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photography 3" class="img-fluid rounded shadow-sm gallery-img" src="images/photo3.jpg">
+                  </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="photoshop" role="tabpanel">
+               <div class="row g-4">
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photoshop 1" class="img-fluid rounded shadow-sm gallery-img" src="images/ps1.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photoshop 2" class="img-fluid rounded shadow-sm gallery-img" src="images/ps2.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Photoshop 3" class="img-fluid rounded shadow-sm gallery-img" src="images/ps3.jpg">
+                  </div>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="illustrator" role="tabpanel">
+               <div class="row g-4">
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Illustrator 1" class="img-fluid rounded shadow-sm gallery-img" src="images/ai1.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Illustrator 2" class="img-fluid rounded shadow-sm gallery-img" src="images/ai2.jpg">
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                     <img alt="Illustrator 3" class="img-fluid rounded shadow-sm gallery-img" src="images/ai3.jpg">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center" id="booking" style="background-color: #fff8e1;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">Book a Media Session</h2>
+         <div class="mx-auto" style="max-width: 900px;">
+            <iframe frameborder="0" height="650" src="https://outlook.office.com/bookwithme/user/d3d54e286c1b49028789c095c3fc5c1a@cms.k12.nc.us?anonymous&ep=plink" style="border: 3px solid #990000; border-radius: 12px;" width="100%"></iframe>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center" id="contact" style="background-color: #f8f9fa;">
+      <div class="container">
+         <h2 class="text-uppercase mb-4" style="color: #990000;">Contact Us</h2>
+         <p class="mb-4">Have a question or want to work with RAMSmedia? Fill out the form below and we'll get back to you.</p>
+         <div class="mx-auto" style="max-width: 900px;">
+            <iframe allowfullscreen frameborder="0" height="480px" src="https://forms.office.com/r/P7T8Ar7ZWn?embed=true" style="border: 3px solid #990000; border-radius: 12px; max-width:100%; max-height:100vh" width="640px"></iframe>
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center py-5" style="background-color: #fff8e1;">
+      <div class="container">
+         <div class="row justify-content-center g-4" id="tool-buttons">
+            <!-- Dashboard tools loaded from Google Sheet via PapaParse -->
+         </div>
+      </div>
+   </section>
+
+   <section class="text-center py-5" style="background-color: #f8f9fa;">
+      <div class="container">
+         <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-4">
+               <a href="https://launchpad.classlink.com/cmsk12" target="_blank" class="btn btn-danger w-100 tool-button">
+                  <div>🚀</div>
+                  <span>LaunchPad</span>
+               </a>
+            </div>
+            <div class="col-12 col-md-4">
+               <a href="https://www.cmsk12.org/hardinguniversityHS" target="_blank" class="btn btn-outline-dark w-100 tool-button">
+                  <div>🏫</div>
+                  <span>Harding HS</span>
+               </a>
+            </div>
+            <div class="col-12 col-md-4">
+               <a href="dashboard.html" class="btn btn-outline-dark w-100 tool-button">
+                  <div>🧭</div>
+                  <span>Student Dashboard</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">&copy; 2025 RAMSmedia – Harding University High School</p>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.js"></script>
+
+   <script>
+      // Load tools from Google Sheet
+      async function loadTools() {
+         try {
+            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT2NwM8lbE_vE1X8fB7MVdlEd_8ger1gd3LiVg0h-xkkGSgGvl-IuDGaxNCRkVT_QZ1Yretw34M8iNS/pub?output=csv';
+            const response = await fetch(sheetUrl);
+            const csv = await response.text();
+            const { data } = Papa.parse(csv, { header: true });
+            const container = document.getElementById("tool-buttons");
+
+            data.forEach(row => {
+               if (row.Name && row.URL && (row.Icon || row.Image)) {
+                  const iconHTML = row.Image
+                     ? `<img src="${row.Image}" alt="${row.Name}" style="height: 40px; margin-bottom: 0.5rem;">`
+                     : `<span>${row.Icon}</span>`;
+
+                  const div = document.createElement("div");
+                  div.className = "col-6 col-md-4";
+                  div.innerHTML = `
+                     <a href="${row.URL}" target="_blank" class="btn btn-outline-dark w-100 tool-button text-center">
+                        ${iconHTML}<br/>${row.Name}
+                     </a>`;
+                  container.appendChild(div);
+               }
+            });
+         } catch (error) {
+            console.log('Error loading tools:', error);
+         }
+      }
+
+      // Initialize gallery lightbox
+      function initializeGallery() {
+         const galleryImages = document.querySelectorAll("#gallery .tab-pane img");
+         galleryImages.forEach(img => {
+            const link = document.createElement("a");
+            link.href = img.src;
+            link.classList.add("gallery-lightbox");
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+         });
+         new SimpleLightbox('.gallery-lightbox', {
+            captions: true,
+            captionSelector: 'img',
+            captionType: 'attr',
+            captionsData: 'alt',
+         });
+      }
+
+      // Initialize everything when DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+         loadTools();
+         initializeGallery();
+      });
+   </script>
 </body>
 </html>
-
-   </body>
-</html>																								</html>
